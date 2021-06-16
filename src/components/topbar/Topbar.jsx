@@ -2,9 +2,9 @@ import React from "react";
 import "./topbar.scss";
 import { WhatsApp, Mail } from "@material-ui/icons";
 
-function Topbar() {
+function Topbar({ menuOpen, setMenuOpen }) {
   return (
-    <div className="topbar active">
+    <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
@@ -20,7 +20,7 @@ function Topbar() {
           </div>
         </div>
         <div className="right">
-          <div className="hamburger">
+          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="line_1"></span>
             <span className="line_2"></span>
             <span className="line_3"></span>
