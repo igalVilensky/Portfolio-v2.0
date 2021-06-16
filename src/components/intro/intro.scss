@@ -1,3 +1,18 @@
 .intro {
-  background-color: lightyellow;
+  background-color: white;
+  display: flex;
+  .left {
+    flex: 0.5;
+    /* background-color: red; */
+
+    .img__container {
+      img {
+        border: 2px solid blue;
+      }
+    }
+  }
+  .right {
+    flex: 0.5;
+    /* background-color: black; */
+  }
 }
