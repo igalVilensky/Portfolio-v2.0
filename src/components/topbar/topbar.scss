@@ -7,7 +7,7 @@
   color: $mainColor;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   transition: all 1s ease;
   .wrapper {
     padding: 10px 30px;
@@ -18,7 +18,7 @@
     .left {
       display: flex;
       align-items: center;
-
+      /* background-color: red; */
       .logo {
         font-size: 40px;
         font-weight: 700;
