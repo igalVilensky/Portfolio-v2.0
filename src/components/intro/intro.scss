@@ -70,7 +70,9 @@
       bottom: 10px;
       left: 40%;
       img {
-        width: 40px;
+        filter: invert(42%) sepia(93%) saturate(892%) hue-rotate(330deg)
+          brightness(88%) contrast(103%);
+        width: 55px;
         animation: blink 2s infinite;
       }
 
