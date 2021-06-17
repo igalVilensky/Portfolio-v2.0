@@ -36,6 +36,10 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    /* overflow: hidden; */
+    /*  &::-webkit-scrollbar {
+      display: none;
+    } */
     /*  border: 2px solid red; */
     .item {
       /*   background-color: yellow; */
@@ -43,13 +47,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 220px;
-      height: 150px;
+      width: 400px;
+      height: 280px;
       margin: 10px 20px;
       border-radius: 12px;
       color: white;
       position: relative;
       transition: all 0.5s ease;
+
       h3 {
         position: absolute;
         font-size: 20px;
