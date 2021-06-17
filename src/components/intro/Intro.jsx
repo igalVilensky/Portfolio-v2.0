@@ -8,7 +8,7 @@ function Intro() {
   useEffect(() => {
     init(textRef.current, {
       showCursor: true,
-      strings: ["Developer", "Designer", "Product Manager"],
+      strings: ["Web Developer", "Web Designer", "Product Manager"],
       typeSpeed: 150,
       backDelay: 1000,
     });
@@ -25,7 +25,7 @@ function Intro() {
           <h2>Hi there, I'm </h2>
           <h1>Igal Vilensky</h1>
           <h3>
-            Leading <span ref={textRef}></span>
+            Inspired <span ref={textRef}></span>
           </h3>
         </div>
         <a href="#portfolio">
