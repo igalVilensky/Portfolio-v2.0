@@ -25,7 +25,7 @@ function Intro() {
           <h2>Hi there, I'm </h2>
           <h1>Igal Vilensky</h1>
           <h3>
-            Developer <span ref={textRef}></span>
+            first-class <span ref={textRef}></span>
           </h3>
         </div>
         <a href="#portfolio">
