@@ -18,12 +18,13 @@
       align-items: flex-end;
       float: right;
       position: relative;
-      top: 1px;
+      /* top: 1px; */
       img {
         /*  border: 2px solid blue; */
+        height: 90%;
         width: 85%;
         position: absolute;
-        bottom: 135px;
+        bottom: 125px;
       }
     }
   }
