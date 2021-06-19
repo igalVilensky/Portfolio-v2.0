@@ -13,8 +13,10 @@
   justify-content: center;
   align-items: center;
   transition: all 1s ease;
+  opacity: 0;
   &.active {
     right: 0;
+    opacity: 1;
   }
 
   ul {
