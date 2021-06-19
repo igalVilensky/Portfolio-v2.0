@@ -12,7 +12,7 @@ function Topbar({ menuOpen, setMenuOpen }) {
           </a>
           <div className="itemContainer">
             <WhatsApp className="icon" />
-            <span>+49 458 22 54</span>
+            <span>+49 178 309 94 33</span>
           </div>
           <div className="itemContainer">
             <Mail className="icon" />

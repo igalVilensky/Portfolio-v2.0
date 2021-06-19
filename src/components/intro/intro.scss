@@ -40,15 +40,19 @@
       flex-direction: column;
       justify-content: center;
       h1 {
-        font-size: 60px;
+        user-select: none;
+        font-size: 80px;
         margin: 10px 0;
       }
       h2 {
-        font-size: 35px;
+        user-select: none;
+        font-size: 45px;
       }
       h3 {
-        font-size: 30px;
+        user-select: none;
+        font-size: 35px;
         span {
+          user-select: none;
           font-size: inherit;
           color: $secondaryColor;
         }
