@@ -1,5 +1,11 @@
 @import "../../global.scss";
 
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .portfolio {
   background-color: white;
   display: flex;
@@ -19,21 +25,12 @@
 
   .container {
     width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexCenter;
     flex-wrap: wrap;
-    /* overflow: hidden; */
-    /*  &::-webkit-scrollbar {
-      display: none;
-    } */
-    /*  border: 2px solid red; */
+
     .item {
-      /*   background-color: yellow; */
       border: 1px solid rgb(224, 224, 224);
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexCenter;
       width: 400px;
       height: 280px;
       margin: 10px 20px;
@@ -44,7 +41,7 @@
 
       h3 {
         position: absolute;
-        font-size: 20px;
+        font-size: 2em;
         pointer-events: none;
       }
       img {

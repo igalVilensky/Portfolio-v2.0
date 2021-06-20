@@ -1,10 +1,14 @@
 @import "../../global.scss";
 
-.works {
-  background-color: $secondaryColor;
+@mixin flexCenter {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.works {
+  background-color: $secondaryColor;
+  @include flexCenter;
 
   .slider {
     height: 350px;
@@ -14,24 +18,48 @@
     background-color: yellow;
     .container {
       width: 100vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexCenter;
       .item {
+        @include flexCenter;
         width: 800px;
         height: 100%;
         background-color: white;
         border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
         .left {
           flex: 4;
           height: 80%;
           background-color: rgb(111, 0, 255);
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include flexCenter;
+
+          .leftContainer {
+            border: 5px solid rgb(255, 0, 0);
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .imgContainer {
+              @include flexCenter;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: rgb(243, 166, 138);
+              img {
+                width: 2.5em;
+                /* border: 5px solid rgb(251, 255, 0); */
+              }
+            }
+            h2 {
+              font-size: 2em;
+            }
+            p {
+              font-size: 1.3em;
+            }
+            span {
+              font-size: 1.2em;
+            }
+          }
         }
         .right {
           flex: 8;
