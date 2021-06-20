@@ -39,6 +39,13 @@
       position: relative;
       transition: all 0.5s ease;
 
+      a {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+      }
       h3 {
         position: absolute;
         font-size: 2em;

@@ -24,7 +24,10 @@ function Works() {
               </div>
             </div>
             <div className="right">
-              <img src="" alt="" />
+              <img
+                src="https://wpthemego.com/images/themes/themeforest/emarket/mobile-layout-qr.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>
