@@ -69,6 +69,7 @@ function Works() {
         alt="arrow left"
         className="arrow left"
         onClick={() => handleClick("left")}
+        /* style={{ background: false }} */
       />
       <img
         src={`${process.env.PUBLIC_URL}/assets/leftRight.png`}
