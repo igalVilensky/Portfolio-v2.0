@@ -13,9 +13,25 @@
   font-family: Race Sport;
 }
 
+@font-face {
+  src: url(./fonts/FontsFree-Net-american-typewriter-1.ttf);
+  font-family: American Typewriter;
+}
+
+@font-face {
+  src: url(./fonts/OpenSans-Bold.ttf);
+  font-family: OpenSans-Bold;
+}
+
+@font-face {
+  src: url(./fonts/OpenSans-ExtraBold.ttf);
+  font-family: OpenSans-ExtraBold;
+}
+
 .app {
   height: 100vh;
   font-size: 10px;
+
   .sections {
     width: 100%;
     height: calc(100vh - 70px);

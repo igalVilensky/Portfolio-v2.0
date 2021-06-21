@@ -41,20 +41,17 @@
       flex-direction: column;
       justify-content: center;
       h1 {
-        /* font-family: Race Sport; */
         letter-spacing: 1px;
         user-select: none;
         font-size: 8em;
         margin: 10px 0;
       }
       h2 {
-        /* font-family: Race Sport; */
         letter-spacing: 1px;
         user-select: none;
         font-size: 4.5em;
       }
       h3 {
-        /* font-family: Race Sport; */
         letter-spacing: 1px;
         user-select: none;
         font-size: 3.5em;
@@ -62,7 +59,7 @@
           user-select: none;
           font-size: inherit;
           color: $secondaryColor;
-          /* font-family: Race Sport; */
+
           letter-spacing: 1px;
         }
         .ityped-cursor {
