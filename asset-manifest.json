@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio-v2.0/static/css/main.28a34bda.chunk.css",
+    "main.css": "/Portfolio-v2.0/static/css/main.541c25d2.chunk.css",
     "main.js": "/Portfolio-v2.0/static/js/main.728e9137.chunk.js",
     "main.js.map": "/Portfolio-v2.0/static/js/main.728e9137.chunk.js.map",
     "runtime-main.js": "/Portfolio-v2.0/static/js/runtime-main.a1154e59.js",
@@ -8,14 +8,13 @@
     "static/js/2.7ec741ce.chunk.js": "/Portfolio-v2.0/static/js/2.7ec741ce.chunk.js",
     "static/js/2.7ec741ce.chunk.js.map": "/Portfolio-v2.0/static/js/2.7ec741ce.chunk.js.map",
     "index.html": "/Portfolio-v2.0/index.html",
-    "static/css/main.28a34bda.chunk.css.map": "/Portfolio-v2.0/static/css/main.28a34bda.chunk.css.map",
-    "static/js/2.7ec741ce.chunk.js.LICENSE.txt": "/Portfolio-v2.0/static/js/2.7ec741ce.chunk.js.LICENSE.txt",
-    "static/media/app.scss": "/Portfolio-v2.0/static/media/OpenSans-ExtraBold.110e781b.ttf"
+    "static/css/main.541c25d2.chunk.css.map": "/Portfolio-v2.0/static/css/main.541c25d2.chunk.css.map",
+    "static/js/2.7ec741ce.chunk.js.LICENSE.txt": "/Portfolio-v2.0/static/js/2.7ec741ce.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a1154e59.js",
     "static/js/2.7ec741ce.chunk.js",
-    "static/css/main.28a34bda.chunk.css",
+    "static/css/main.541c25d2.chunk.css",
     "static/js/main.728e9137.chunk.js"
   ]
 }
