@@ -62,13 +62,17 @@
               font-size: 2em;
             }
             p {
-              font-size: 1.3em;
+              font-size: 1.6em;
             }
             span {
-              font-size: 1.2em;
+              font-size: 1.8em;
               font-weight: 600;
               text-decoration: underline;
               cursor: pointer;
+              letter-spacing: 1px;
+              &:hover {
+                color: $secondaryColor;
+              }
             }
           }
         }

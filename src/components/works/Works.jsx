@@ -15,14 +15,14 @@ function Works() {
       id: "2",
       icon: "./assets/globe.png",
       title: "Mobile Application",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text.",
       img: "",
     },
     {
       id: "3",
       icon: "./assets/writing.png",
       title: "Branding",
-      desc: "Lorem Ipsum is simply dummy text of the printing korem Ipsum is simply dummy texs simply dummy text of the and typesetting industry.",
+      desc: "Lorem Ipsum is simply dummy text of the printing korem Ipsum is aply dummy text of the and typesetting industry.",
       img: "",
     },
   ];
