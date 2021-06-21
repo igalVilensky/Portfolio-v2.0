@@ -9,13 +9,27 @@
 .works {
   background-color: $secondaryColor;
   @include flexCenter;
+  position: relative;
+  .arrow {
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
 
+    &.left {
+      left: 250px;
+      transform: rotateY(180deg);
+    }
+    &.right {
+      right: 250px;
+    }
+  }
   .slider {
     height: 350px;
     display: flex;
     position: absolute;
     left: 0;
     /* background-color: yellow; */
+    transition: all 1s ease-out;
     .container {
       width: 100vw;
       @include flexCenter;
