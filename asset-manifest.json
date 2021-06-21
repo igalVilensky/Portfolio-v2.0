@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio-v2.0/static/css/main.b7018a70.chunk.css",
-    "main.js": "/Portfolio-v2.0/static/js/main.14074c78.chunk.js",
-    "main.js.map": "/Portfolio-v2.0/static/js/main.14074c78.chunk.js.map",
+    "main.css": "/Portfolio-v2.0/static/css/main.d54c2539.chunk.css",
+    "main.js": "/Portfolio-v2.0/static/js/main.2b643dc5.chunk.js",
+    "main.js.map": "/Portfolio-v2.0/static/js/main.2b643dc5.chunk.js.map",
     "runtime-main.js": "/Portfolio-v2.0/static/js/runtime-main.a1154e59.js",
     "runtime-main.js.map": "/Portfolio-v2.0/static/js/runtime-main.a1154e59.js.map",
     "static/js/2.7ec741ce.chunk.js": "/Portfolio-v2.0/static/js/2.7ec741ce.chunk.js",
     "static/js/2.7ec741ce.chunk.js.map": "/Portfolio-v2.0/static/js/2.7ec741ce.chunk.js.map",
     "index.html": "/Portfolio-v2.0/index.html",
-    "static/css/main.b7018a70.chunk.css.map": "/Portfolio-v2.0/static/css/main.b7018a70.chunk.css.map",
+    "static/css/main.d54c2539.chunk.css.map": "/Portfolio-v2.0/static/css/main.d54c2539.chunk.css.map",
     "static/js/2.7ec741ce.chunk.js.LICENSE.txt": "/Portfolio-v2.0/static/js/2.7ec741ce.chunk.js.LICENSE.txt",
     "static/media/app.scss": "/Portfolio-v2.0/static/media/FontsFree-Net-RaceSport-nR1j0.d1c53326.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.a1154e59.js",
     "static/js/2.7ec741ce.chunk.js",
-    "static/css/main.b7018a70.chunk.css",
-    "static/js/main.14074c78.chunk.js"
+    "static/css/main.d54c2539.chunk.css",
+    "static/js/main.2b643dc5.chunk.js"
   ]
 }
