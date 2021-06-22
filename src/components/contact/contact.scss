@@ -22,6 +22,9 @@
     h2 {
       font-size: 3.5em;
       margin-bottom: -50px;
+      @include mobile {
+        margin-bottom: 0;
+      }
     }
 
     form {
@@ -83,6 +86,12 @@
         font-size: 1.3rem;
         letter-spacing: 1px;
         user-select: none;
+        @include mobile {
+          height: 30px;
+          overflow: hidden;
+          padding-top: 0;
+          /* font-size: 1.1rem; */
+        }
       }
     }
   }
