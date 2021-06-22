@@ -4,16 +4,28 @@
   @include flexCenter;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
+  @include mobile {
+    justify-content: space-around;
+  }
 
   h1 {
     font-size: 5em;
+    @include mobile {
+      font-size: 3em;
+      overflow: hidden;
+      margin-top: 10px;
+    }
   }
 
   .container {
     @include flexCenter;
     width: 100%;
     height: 80%;
-
+    @include mobile {
+      flex-direction: column;
+      overflow: hidden;
+      height: 100%;
+    }
     .card {
       width: 250px;
       height: 70%;
@@ -24,12 +36,21 @@
       flex-direction: column;
       padding: 20px;
       transition: all 1s ease;
-
+      @include mobile {
+        height: 180px;
+        width: 300px;
+        margin: 10px 0;
+      }
       &.featured {
         /* background-color: red; */
         width: 300px;
         height: 75%;
         margin: 0 30px;
+        @include mobile {
+          height: 180px;
+
+          margin: 1px;
+        }
       }
 
       &:hover {
@@ -52,6 +73,11 @@
             border-radius: 50%;
             object-fit: cover;
             margin: 0 30px;
+
+            @include mobile {
+              width: 40px;
+              height: 40px;
+            }
           }
         }
       }
@@ -61,6 +87,10 @@
         border-radius: 10px;
         font-size: 1.6em;
         letter-spacing: 1px;
+        @include mobile {
+          font-size: 1.2em;
+          padding: 5px;
+        }
       }
 
       .bottom {
@@ -70,11 +100,17 @@
         h3 {
           margin-bottom: 5px;
           font-size: 2em;
+          @include mobile {
+            font-size: 1.4em;
+          }
         }
 
         h4 {
           color: rgb(105, 105, 105);
           font-size: 1.6em;
+          @include mobile {
+            font-size: 1.3em;
+          }
         }
       }
     }

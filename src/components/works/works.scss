@@ -13,6 +13,10 @@
     border-radius: 50%;
     padding: 10px 10px;
     transition: all 0.5s ease;
+
+    @include mobile {
+      display: none;
+    }
     &:hover {
       /* background-color: #292b31; */
       height: 6.5em;
@@ -30,25 +34,36 @@
     display: flex;
     position: absolute;
     left: 0;
-
     /* background-color: yellow; */
     transition: all 1s ease-out;
+
+    @include mobile {
+      height: 90vh;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
     .container {
       width: 100vw;
       @include flexCenter;
+
       .item {
         @include flexCenter;
         width: 800px;
         height: 100%;
         background-color: white;
         border-radius: 20px;
-
+        @include mobile {
+          width: 70%;
+          height: 200px;
+          margin: 10px 0;
+        }
         .left {
           flex: 4;
           height: 80%;
-          /* background-color: rgb(111, 0, 255); */
+          /*  background-color: rgb(111, 0, 255); */
           @include flexCenter;
-
+          @include mobile {
+          }
           .leftContainer {
             /* border: 5px solid rgb(255, 0, 0); */
             width: 90%;
@@ -56,22 +71,35 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            position: relative;
+            @include mobile {
+              height: 100%;
+              justify-content: space-around;
+            }
             .imgContainer {
               @include flexCenter;
               width: 40px;
               height: 40px;
               border-radius: 50%;
+              /*      border: 5px solid rgb(251, 255, 0); */
               background-color: rgb(243, 166, 138);
+              @include mobile {
+              }
               img {
                 width: 2.5em;
-                /* border: 5px solid rgb(251, 255, 0); */
               }
             }
             h2 {
               font-size: 2em;
+              @include mobile {
+                font-size: 2em;
+              }
             }
             p {
               font-size: 1.6em;
+              @include mobile {
+                display: none;
+              }
             }
             span {
               font-size: 1.8em;
@@ -79,6 +107,7 @@
               text-decoration: underline;
               cursor: pointer;
               letter-spacing: 1px;
+
               &:hover {
                 color: $secondaryColor;
               }
