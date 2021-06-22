@@ -3,6 +3,10 @@
 .intro {
   background-color: white;
   display: flex;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left {
     flex: 0.5;
@@ -20,12 +24,20 @@
       float: right;
       position: relative;
       /* top: 1px; */
+      @include mobile {
+        align-items: flex-start;
+      }
       img {
         /*  border: 2px solid blue; */
         /* height: 90%; */
         width: 85%;
         position: absolute;
         bottom: 125px;
+
+        @include mobile {
+          width: 40%;
+          bottom: 600px;
+        }
       }
     }
   }
@@ -40,21 +52,32 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+      }
       h1 {
         letter-spacing: 1px;
         user-select: none;
         font-size: 8em;
         margin: 10px 0;
+        @include mobile {
+          font-size: 6em;
+        }
       }
       h2 {
         letter-spacing: 1px;
         user-select: none;
         font-size: 4.5em;
+        @include mobile {
+          font-size: 4em;
+        }
       }
       h3 {
         letter-spacing: 1px;
         user-select: none;
-        font-size: 3.5em;
+        font-size: 2.5em;
         span {
           user-select: none;
           font-size: inherit;

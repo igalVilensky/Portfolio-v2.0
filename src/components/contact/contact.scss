@@ -32,14 +32,28 @@
         width: 300px;
         height: 30px;
         font-size: 1.4em;
+        &::placeholder {
+          padding-left: 5px;
+          color: $secondaryColor;
+        }
       }
 
       textarea {
         width: 300px;
         height: 300px;
         font-size: 1.4em;
+        &::placeholder {
+          padding-left: 5px;
+          padding-top: 5px;
+          color: $secondaryColor;
+        }
       }
-
+      textarea[type="text"] {
+        /* width: 100%; */
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
       button {
         width: 150px;
         height: 30px;

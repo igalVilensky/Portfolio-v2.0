@@ -7,6 +7,10 @@ $secondaryColor: #e35241;
   align-items: center;
 }
 
-/* * {
-  font-family: OpenSans-Bold;
-} */
+$width: 800px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
