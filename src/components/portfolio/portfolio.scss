@@ -13,6 +13,10 @@
       font-size: 2.5em;
       margin-bottom: 10px;
     }
+    @include mobileSmall {
+      font-size: 2.5rem;
+      padding-bottom: 30px;
+    }
   }
 
   ul {
@@ -26,10 +30,18 @@
       flex-wrap: wrap;
       justify-content: center;
     }
+    @include mobileSmall {
+      /* background-color: rebeccapurple; */
+      height: 12rem;
+      width: 300px;
+    }
     li {
       @include mobile {
         margin-bottom: 5px;
         font-size: 1.5em;
+      }
+      @include mobileSmall {
+        height: 1.2rem;
       }
     }
   }
@@ -41,6 +53,8 @@
 
     @include mobile {
       width: 100%;
+    }
+    @include mobileSmall {
     }
 
     .item {
@@ -57,6 +71,9 @@
       @include mobile {
         width: 200px;
         height: 130px;
+      }
+      @include mobileSmall {
+        width: 15rem;
       }
       a {
         height: 100%;

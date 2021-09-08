@@ -8,9 +8,22 @@ $secondaryColor: #e35241;
 }
 
 $width: 900px;
-
+$widthSmall: 415px;
+$width1850: 1850px;
 @mixin mobile {
   @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+@mixin mobileSmall {
+  @media (max-width: #{$widthSmall}) {
+    @content;
+  }
+}
+
+@mixin wBig {
+  @media (min-width: #{$width1850}) {
     @content;
   }
 }
