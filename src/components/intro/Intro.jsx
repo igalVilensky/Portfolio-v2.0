@@ -28,12 +28,16 @@ function Intro() {
           <h2>Hi there, I'm </h2>
           <h1>Igal Vilensky</h1>
           <h3>
-            Full Stack <span ref={textRef}></span>
+            Full Stack <br />
+            <span ref={textRef}></span>
           </h3>
+          <a href="#portfolio">
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/down.png`}
+              alt="me"
+            ></img>
+          </a>
         </div>
-        <a href="#portfolio">
-          <img src={`${process.env.PUBLIC_URL}/assets/down.png`} alt="me"></img>
-        </a>
       </div>
     </div>
   );
