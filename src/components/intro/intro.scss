@@ -3,17 +3,25 @@
 .intro {
   background-color: white;
   display: flex;
-  @include mobile {
+  @include mobileExtraSmall {
+    /* background-color: rgb(177, 253, 177); */
     flex-direction: column;
-    align-items: center;
   }
   @include mobileSmall {
+    /* background-color: green; */
+  }
+  @include mobile {
+    /* flex-direction: column;
+    align-items: center; */
   }
 
   .left {
     flex: 0.55;
     /* background-color: rgb(51, 255, 0); */
     overflow: hidden;
+    @include mobileExtraSmall {
+      @include flexCenter;
+    }
     @include mobileSmall {
       @include flexCenter;
     }
@@ -28,33 +36,42 @@
       align-items: flex-end;
       float: right;
       position: relative;
-      /* top: 1px; */
-      @include mobile {
-        align-items: flex-start;
+
+      @include mobileExtraSmall {
+        /* background-color: green; */
+        width: 18rem;
+        height: 18rem;
       }
       @include mobileSmall {
         /* background-color: rgb(213, 223, 72); */
-        width: 18rem;
-        height: 18rem;
-        align-items: center;
+        width: 20rem;
+        height: 20rem;
       }
 
+      @include mobileMedium {
+        width: 22rem;
+        height: 22rem;
+      }
+      @include mobile {
+        width: 27rem;
+        height: 27rem;
+        background-color: hotpink;
+      }
       img {
-        /*  border: 2px solid blue; */
-        /* height: 90%; */
-        width: 70%;
-        position: absolute;
-        bottom: 300px;
-
+        @include mobileExtraSmall {
+          width: 100%;
+        }
         @include mobile {
           width: 40%;
           bottom: 600px;
         }
         @include mobileSmall {
           width: 100%;
-          /*  bottom: 1000px; */
-          /* border: 1px solid green; */
           position: initial;
+        }
+        @include mobileMedium {
+          position: initial;
+          width: 100%;
         }
       }
     }
@@ -64,30 +81,42 @@
 
     position: relative;
     .wrapper {
-      /* background-color: black; */
+      /* border: 3px dotted red; */
+      /* width: calc(100% - 6px); */
       width: 100%;
       height: 100%;
-      padding-left: 50px;
+      padding: 0;
+      margin: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
-
-      @include mobile {
-        padding-left: 0;
-        align-items: center;
-        justify-content: space-evenly;
+      align-items: center;
+      @include mobileExtraSmall {
+        /* background-color: rgb(130, 128, 230); */
+        position: relative;
+        bottom: 50px;
       }
       @include mobileSmall {
         justify-content: flex-start;
       }
+      /* @include mobile {
+        padding-left: 0;
+        align-items: center;
+        justify-content: space-evenly;
+      } */
+
       h1 {
         letter-spacing: 1px;
         user-select: none;
         font-size: 8em;
         margin: 10px 0;
-        @include mobile {
-          font-size: 6em;
+        @include mobileExtraSmall {
+          /* background-color: rgb(128, 105, 0); */
+          font-size: 2rem;
         }
+        /* @include mobile {
+          font-size: 6em;
+        } */
         @include mobileSmall {
           font-size: 2rem;
           padding-bottom: 30px;
@@ -98,9 +127,13 @@
         letter-spacing: 1px;
         user-select: none;
         font-size: 4.5em;
-        @include mobile {
-          font-size: 4em;
+        @include mobileExtraSmall {
+          /*  background-color: rgb(248, 43, 204); */
+          font-size: 1.7rem;
         }
+        /* @include mobile {
+          font-size: 4em;
+        } */
         @include mobileSmall {
           font-size: 2rem;
           padding-bottom: 0.5rem;
@@ -110,13 +143,18 @@
         letter-spacing: 2px;
         user-select: none;
         font-size: 2.8em;
-
+        @include mobileExtraSmall {
+          font-size: 1.5rem;
+        }
         span {
           user-select: none;
           font-size: inherit;
           color: $secondaryColor;
 
           letter-spacing: 1px;
+          @include mobileExtraSmall {
+            font-size: 1.5rem;
+          }
           @include mobileSmall {
             font-size: 1.8rem;
           }

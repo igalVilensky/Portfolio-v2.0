@@ -7,23 +7,50 @@ $secondaryColor: #e35241;
   align-items: center;
 }
 
+$widthExtraSmall: 210px;
+$widthSmall: 500px;
+$width650: 650px;
 $width: 900px;
-$widthSmall: 415px;
+$width1100: 1100px;
 $width1850: 1850px;
-@mixin mobile {
-  @media (max-width: #{$width}) {
+
+// 210px
+@mixin mobileExtraSmall {
+  @media (min-width: #{$widthExtraSmall}) {
     @content;
   }
 }
 
+// 500px
 @mixin mobileSmall {
-  @media (max-width: #{$widthSmall}) {
+  @media (min-width: #{$widthSmall}) {
     @content;
   }
 }
 
+// 650px
+@mixin mobileMedium {
+  @media (min-width: #{$width650}) {
+    @content;
+  }
+}
+
+//900px
+@mixin mobile {
+  @media (min-width: #{$width}) {
+    @content;
+  }
+}
+
+// 1100px
+@mixin desktopSmall {
+  @media (min-width: #{$width1100}) {
+    @content;
+  }
+}
+
+// 1850px
 @mixin wBig {
   @media (min-width: #{$width1850}) {
-    @content;
   }
 }

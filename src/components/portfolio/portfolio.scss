@@ -5,17 +5,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include mobileExtraSmall {
+    /* background-color: greenyellow; */
+  }
 
   h1 {
     margin-top: 10px;
     font-size: 40px;
+    @include mobileExtraSmall {
+      font-size: 2rem;
+      height: 10rem;
+    }
     @include mobile {
       font-size: 2.5em;
       margin-bottom: 10px;
     }
     @include mobileSmall {
       font-size: 2.5rem;
-      padding-bottom: 30px;
+      height: 5rem;
     }
   }
 
@@ -24,9 +31,15 @@
     padding: 0;
     list-style: none;
     display: flex;
+    @include mobileExtraSmall {
+      flex-wrap: wrap;
+      min-width: 60%;
+      max-width: 80%;
+      height: 50rem;
+      /* border: 2px solid red; */
+    }
 
     @include mobile {
-      margin: 10px 0;
       flex-wrap: wrap;
       justify-content: center;
     }
@@ -36,6 +49,14 @@
       width: 300px;
     }
     li {
+      @include mobileExtraSmall {
+        height: 2rem;
+        width: 5rem;
+        /*  background-color: rgb(231, 47, 255); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       @include mobile {
         margin-bottom: 5px;
         font-size: 1.5em;
