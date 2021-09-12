@@ -14,15 +14,17 @@
     font-size: 40px;
     @include mobileExtraSmall {
       font-size: 2rem;
-      height: 10rem;
+      height: 15rem;
     }
-    @include mobile {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
+
     @include mobileSmall {
-      font-size: 2.5rem;
-      height: 5rem;
+      font-size: 2.2rem;
+      height: 15rem;
+    }
+
+    @include mobile {
+      font-size: 2rem;
+      margin-bottom: 10px;
     }
   }
 
@@ -38,19 +40,18 @@
       height: 50rem;
       /* border: 2px solid red; */
     }
+    @include mobileSmall {
+      /* background-color: rebeccapurple; */
+    }
 
     @include mobile {
       flex-wrap: wrap;
       justify-content: center;
     }
-    @include mobileSmall {
-      /* background-color: rebeccapurple; */
-      height: 12rem;
-      width: 300px;
-    }
+
     li {
       @include mobileExtraSmall {
-        height: 2rem;
+        height: 1.2rem;
         width: 5rem;
         /*  background-color: rgb(231, 47, 255); */
         display: flex;
@@ -68,14 +69,18 @@
   }
 
   .container {
-    width: 70%;
+    width: 90%;
     @include flexCenter;
     flex-wrap: wrap;
-
-    @include mobile {
+    @include mobileExtraSmall {
       width: 100%;
     }
     @include mobileSmall {
+      /* background-color: yellow; */
+      width: 100%;
+    }
+    @include mobile {
+      width: 100%;
     }
 
     .item {
@@ -94,7 +99,6 @@
         height: 130px;
       }
       @include mobileSmall {
-        width: 15rem;
       }
       a {
         height: 100%;

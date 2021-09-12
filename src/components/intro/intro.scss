@@ -39,22 +39,22 @@
 
       @include mobileExtraSmall {
         /* background-color: green; */
-        width: 18rem;
-        height: 18rem;
+        width: 15rem;
+        height: 15rem;
       }
       @include mobileSmall {
         /* background-color: rgb(213, 223, 72); */
-        width: 20rem;
-        height: 20rem;
+        width: 18rem;
+        height: 18rem;
       }
 
       @include mobileMedium {
-        width: 22rem;
-        height: 22rem;
+        width: 20rem;
+        height: 20rem;
       }
       @include mobile {
-        width: 27rem;
-        height: 27rem;
+        width: 20rem;
+        height: 20rem;
         background-color: hotpink;
       }
       img {
@@ -97,7 +97,7 @@
         bottom: 50px;
       }
       @include mobileSmall {
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
       }
       /* @include mobile {
         padding-left: 0;
@@ -145,6 +145,9 @@
         font-size: 2.8em;
         @include mobileExtraSmall {
           font-size: 1.5rem;
+        }
+        @include mobileSmall {
+          font-size: 1.7rem;
         }
         span {
           user-select: none;
