@@ -28,7 +28,13 @@ function Contact() {
             rows="10"
           ></textarea>
           <button type="submit">Send</button>
-          {msg && <span>Thanks, I'll reply shortly. </span>}
+          {msg ? (
+            <span style={{ display: "block" }}>
+              Thanks, I'll reply shortly.
+            </span>
+          ) : (
+            <span style={{ display: "block" }}></span>
+          )}
         </form>
       </div>
     </div>

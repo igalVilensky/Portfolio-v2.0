@@ -1,16 +1,16 @@
 @import "../../global.scss";
 
 .portfolioList {
-  font-size: 1.4em;
-  /*  background-color: green; */
+  font-size: 1rem;
+  /* background-color: green; */
   cursor: pointer;
 
   /* transition: all 0.2s; */
   @include mobileExtraSmall {
-    height: 10rem;
+    /*   height: 10rem; */
   }
   @include mobile {
-    margin-right: 20px;
+    /* margin-right: 20px; */
   }
 
   &.active {
