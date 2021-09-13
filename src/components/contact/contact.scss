@@ -16,6 +16,7 @@
     @include mobileExtraSmall {
       display: none;
     }
+
     @include mobile {
       display: block;
     }
@@ -29,6 +30,9 @@
       justify-content: center;
       /*  background-color: greenyellow; */
     }
+    @include mobileMedium {
+      background-color: blue;
+    }
     h2 {
       @include mobileExtraSmall {
         font-size: 2rem;
@@ -37,7 +41,7 @@
         font-size: 4rem;
         /* background-color: blue; */
         position: relative;
-        top: 8rem;
+        top: 4rem;
       }
 
       @include mobile {
@@ -58,53 +62,62 @@
         position: relative;
       }
       @include mobileMedium {
-        width: 100%;
-        /* border: 1px solid black; */
+        /* width: 80%;
+        border: 1px solid rgb(255, 0, 0); */
       }
+      .input_textArea_wrap {
+        display: flex;
+        flex-direction: column;
+        background-color: burlywood;
+        input {
+          @include mobileExtraSmall {
+            /*  max-width: 84%;
+            min-width: 84%;
+            height: 30px;
+            font-size: 1.4em;
+            margin-top: 3px;
+            position: relative; */
+            /* top: 1rem; */
+          }
 
-      input {
-        @include mobileExtraSmall {
-          max-width: 90%;
-          min-width: 90%;
-          height: 30px;
-          font-size: 1.4em;
-          position: relative;
-          top: 1rem;
-        }
-
-        &::placeholder {
-          padding-left: 5px;
-          color: $secondaryColor;
-        }
-      }
-      @include mobileMedium {
-      }
-
-      textarea {
-        @include mobileExtraSmall {
-          max-width: 90%;
-          min-width: 90%;
-          height: 15rem;
-          font-size: 1.4em;
+          &::placeholder {
+            padding-left: 5px;
+            color: $secondaryColor;
+          }
         }
         @include mobileMedium {
         }
 
-        @include mobile {
-          height: 200px;
-        }
-        &::placeholder {
-          padding-left: 5px;
-          padding-top: 5px;
-          color: $secondaryColor;
-        }
-      }
-      textarea[type="text"] {
-        /* width: 100%; */
-        padding: 12px 20px;
+        textarea {
+          @include mobileExtraSmall {
+            /* max-width: 84%;
+            min-width: 84%;
+            height: 13rem;
+            font-size: 1.4em;
+            margin-top: 5px; */
+          }
+          @include mobileMedium {
+            /* height: 20rem;
+            margin-bottom: 20rem; */
+          }
 
-        box-sizing: border-box;
+          @include mobile {
+            height: 200px;
+          }
+          &::placeholder {
+            padding-left: 5px;
+            padding-top: 5px;
+            color: $secondaryColor;
+          }
+        }
+        textarea[type="text"] {
+          /* width: 100%; */
+          /*    padding: 12px 20px;
+
+          box-sizing: border-box; */
+        }
       }
+
       button {
         @include mobileExtraSmall {
           width: 150px;

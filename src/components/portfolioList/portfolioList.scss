@@ -2,12 +2,14 @@
 
 .portfolioList {
   font-size: 1rem;
-  /* background-color: green; */
+
   cursor: pointer;
 
   /* transition: all 0.2s; */
   @include mobileExtraSmall {
     /*   height: 10rem; */
+    /*  height: 90px; */
+    /* background-color: green; */
   }
   @include mobile {
     /* margin-right: 20px; */

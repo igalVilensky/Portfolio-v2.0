@@ -19,14 +19,16 @@ function Contact() {
       <div className="right">
         <h2>Contact</h2>
         <form onSubmit={submitHandle}>
-          <input type="text" placeholder="eMail" />
-          <textarea
-            placeholder="Message"
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-          ></textarea>
+          <div className="input_textArea_wrap">
+            <input type="text" placeholder="eMail" />
+            <textarea
+              placeholder="Message"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
           <button type="submit">Send</button>
           {msg ? (
             <span style={{ display: "block" }}>

@@ -14,7 +14,7 @@
     font-size: 40px;
     @include mobileExtraSmall {
       font-size: 2rem;
-      height: 5rem;
+      height: 6rem;
     }
 
     @include mobileSmall {
@@ -37,8 +37,8 @@
     justify-content: space-between;
     @include mobileExtraSmall {
       /* flex-wrap: wrap; */
-      min-width: 90%;
-      height: 3rem;
+      min-width: 85%;
+      height: 4rem;
       /*  border: 2px solid red; */
       display: flex;
       justify-content: space-between;
