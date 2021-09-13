@@ -3,11 +3,22 @@ import "./contact.scss";
 
 function Contact() {
   const [msg, setMsg] = useState(false);
+  const [inputText, setInputText] = useState("");
 
   const submitHandle = (e) => {
     e.preventDefault();
     setMsg(true);
   };
+
+  const changeHandle = (e) => {
+    const text = e.target.value;
+    setInputText(text);
+    console.log(text);
+  };
+  const clickHandle = (e) => {
+    setInputText("");
+  };
+
   return (
     <div className="contact" id="contact">
       <div className="left">
@@ -27,9 +38,13 @@ function Contact() {
               id=""
               cols="30"
               rows="10"
+              value={inputText}
+              onChange={changeHandle}
             ></textarea>
           </div>
-          <button type="submit">Send</button>
+          <button type="submit" onClick={clickHandle}>
+            Send
+          </button>
           {msg ? (
             <span style={{ display: "block" }}>
               Thanks, I'll reply shortly.
