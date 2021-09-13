@@ -97,7 +97,7 @@ export const mobilePortfolio = [
   },
 ];
 
-export const designPortfolio = [
+/* export const designPortfolio = [
   {
     id: 1,
     title: "Design Social Media App",
@@ -163,3 +163,4 @@ export const contentPortfolio = [
     img: "https://lh3.googleusercontent.com/-Lvt2QxemHNglsx2mBYFwLIIkm7GGz_9QTSPNeudsnXkc-GBBNgut0tjpDut5oDGzLwVl3XyYsww1722aZFKMmiljbzG1ROhd5TO_tsvzl9cAWG8K3SAxAQEs3UMCBQzxUMsnLsV1lGxTspcrX1JsezarcyUkq-xbufQBRbGKDRNJCv0Ktw9vRjncw3UDx_KQmrxXpdiZAtSfbJmVpZCcwPjrG0-fU15FJQwaay3R4R3a1QJEbWBXBZ-cFaOc470wWj_W_4qOpTBFeTFVMxUtp7wnT3fCsFkd2u5NkX4MkMt8wxMkvH6DWMrxpE7Rsqq5RIyvP8lAXacalMYUyj_Sh6oB1tI_dxk6E-5AT4pTrEB73nfdZAXFJHAevw8QmmoNR4g2LYJWwuhPkmCTuf7i8IzEzzo8RAevzpd2hmWeAO6CqaUJQXMVaRiGepiFcacNzwd1_VO7fnRHMD4tHepYXt0dMGVrjXMD3L-rqb7tLXq0xg4aMeG1XasUK4eBEVTx_DhYSylWdG6QPPLNKDhWUX2drzxuk-xed6XKFwsJVGVi29BKxyQHTN2FhVssEo9voEd1MKSgzBndG5PMGigCQNXSJVdggudrg66WdcRqRv29gR1uiB59H1GzfNu9MAPVsNAVgJV2cZBunB6nNpS3SixJFaSVGuHi31QeZBptQC5dru83bwD3ov9mGRWbC1LKs35wrQSBRSJTza9kKGr6ko=w1797-h881-no?authuser=0",
   },
 ];
+ */

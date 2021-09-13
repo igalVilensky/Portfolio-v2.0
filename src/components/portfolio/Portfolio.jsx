@@ -6,7 +6,7 @@ import {
   webPortfolio,
   mobilePortfolio,
   designPortfolio,
-  contentPortfolio,
+  /* contentPortfolio, */
 } from "../../data.js";
 
 function Portfolio() {
@@ -17,8 +17,8 @@ function Portfolio() {
     { id: "featured", title: "Featured" },
     { id: "web", title: "Web App" },
     { id: "mobile", title: "Mobile App" },
-    { id: "content", title: "Content" },
-    { id: "design", title: "Design" },
+    /* { id: "content", title: "Content" },
+    { id: "design", title: "Design" }, */
   ];
 
   useEffect(() => {
@@ -32,14 +32,14 @@ function Portfolio() {
       case "mobile":
         setData(mobilePortfolio);
         break;
-      case "design":
+      /* case "design":
         setData(designPortfolio);
         break;
       case "content":
         setData(contentPortfolio);
-        break;
+        break; */
       default:
-        setData(contentPortfolio);
+        setData(featuredPortfolio);
     }
   }, [selected]);
   return (

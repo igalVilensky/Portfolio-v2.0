@@ -2,11 +2,13 @@
 
 .portfolioList {
   font-size: 1.4em;
-  margin-right: 50px;
-  padding: 7px;
+  /*  background-color: green; */
   cursor: pointer;
-  /* transition: all 0.2s; */
 
+  /* transition: all 0.2s; */
+  @include mobileExtraSmall {
+    height: 10rem;
+  }
   @include mobile {
     margin-right: 20px;
   }
