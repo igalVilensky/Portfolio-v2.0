@@ -10,7 +10,7 @@ $secondaryColor: #e35241;
 $widthExtraSmall: 210px;
 $widthSmall: 500px;
 $width650: 650px;
-$width: 900px;
+$width: 950px;
 $width1100: 1100px;
 $width1850: 1850px;
 
@@ -35,7 +35,7 @@ $width1850: 1850px;
   }
 }
 
-//900px
+//950px
 @mixin mobile {
   @media (min-width: #{$width}) {
     @content;

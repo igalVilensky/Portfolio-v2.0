@@ -28,6 +28,11 @@
   font-family: OpenSans-ExtraBold;
 }
  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .app {
   height: 100vh;
   font-size: 10px;

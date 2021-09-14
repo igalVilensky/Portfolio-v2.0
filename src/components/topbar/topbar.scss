@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .topbar {
-  width: 100%;
+  width: 100vw;
   height: 70px;
   background-color: white;
   color: $mainColor;
@@ -53,8 +53,13 @@
         @include mobileSmall {
           /* display: flex; */
         }
-        @include mobileMedium {
-          /* display: flex; */
+        @include mobile {
+          display: flex;
+          /* border: 1px solid red; */
+          width: 15rem;
+          display: flex;
+          justify-content: center;
+          height: 2rem;
         }
         .icon {
           font-size: 18px;
@@ -62,7 +67,7 @@
           /* border: 2px solid red; */
         }
         span {
-          font-size: 1.5em;
+          font-size: 1.2rem;
           font-weight: 500;
         }
       }

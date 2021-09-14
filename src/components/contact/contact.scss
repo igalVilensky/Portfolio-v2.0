@@ -2,86 +2,73 @@
 
 .contact {
   background-color: white;
+  /* border: 1px solid black; */
+  width: 100vw;
   display: flex;
   @include mobile {
-    flex-direction: row;
+    /*  flex-direction: row; */
   }
-  .left {
-    flex: 1;
-    overflow: hidden;
 
-    img {
-      min-height: 100%;
-      width: 100%;
-      object-fit: fill;
-    }
-    @include mobileExtraSmall {
-      display: none;
-    }
-
-    @include mobile {
-      display: block;
-    }
-  }
   .right {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
     @include mobileExtraSmall {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      /*  background-color: greenyellow; */
+      /*  border: 2px solid red; */
+      /* background-color: rgb(0, 204, 255); */
     }
     @include mobileMedium {
       /* background-color: blue; */
     }
     h2 {
       @include mobileExtraSmall {
-        font-size: 3rem;
-        position: relative;
-        top: 1rem;
+        font-size: 2.2rem;
       }
       @include mobileMedium {
         font-size: 4rem;
         /* background-color: blue; */
-        position: relative;
-        top: 4rem;
+        /*  position: relative;
+        top: 4rem; */
       }
 
       @include mobile {
         margin-bottom: 0;
       }
     }
-
     form {
-      @include mobileExtraSmall {
-        min-width: 100%;
-        max-width: 100%;
-        /* border: 1px solid black; */
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-        position: relative;
-      }
-      @include mobileMedium {
-        /* width: 80%;
-        border: 1px solid rgb(255, 0, 0); */
-      }
+      /* border: 1px solid yellow; */
+      height: 40vh;
+      width: 100vw;
       .input_textArea_wrap {
         display: flex;
         flex-direction: column;
-        background-color: burlywood;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        @include mobileExtraSmall {
+          // min-width: 100%;
+          // max-width: 100%;
+          /* border: 1px solid black; */
+          /*  background-color: blue; */
+          display: flex;
+          align-items: center;
+          height: 100%;
+          flex-direction: column;
+          // position: relative;
+        }
+        @include mobileMedium {
+          /* width: 80%;
+        border: 1px solid rgb(255, 0, 0); */
+        }
+
         input {
+          height: 1.5rem;
+          width: 80%;
+
           @include mobileExtraSmall {
-            /*  max-width: 84%;
-            min-width: 84%;
-            height: 30px;
-            font-size: 1.4em;
-            margin-top: 3px;
-            position: relative; */
-            /* top: 1rem; */
           }
 
           &::placeholder {
@@ -93,20 +80,13 @@
         }
 
         textarea {
+          width: 80%;
           @include mobileExtraSmall {
-            /* max-width: 84%;
-            min-width: 84%;
-            height: 13rem;
-            font-size: 1.4em;
-            margin-top: 5px; */
           }
           @include mobileMedium {
-            /* height: 20rem;
-            margin-bottom: 20rem; */
           }
 
           @include mobile {
-            height: 200px;
           }
           &::placeholder {
             padding-left: 5px;
@@ -115,57 +95,53 @@
           }
         }
         textarea[type="text"] {
-          /* width: 100%; */
-          /*    padding: 12px 20px;
-
-          box-sizing: border-box; */
         }
-      }
 
-      button {
-        @include mobileExtraSmall {
-          width: 150px;
-          height: 30px;
-          color: white;
-          background-color: $secondaryColor;
-          border: none;
-          cursor: pointer;
-          border-radius: 10px;
-          font-weight: 500;
-          position: relative;
-          bottom: 3rem;
-          &:focus {
-            outline: none;
+        button {
+          @include mobileExtraSmall {
+            width: 150px;
+            height: 30px;
+            color: white;
+            background-color: $secondaryColor;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            font-weight: 500;
+            margin-top: 5px;
+
+            &:focus {
+              outline: none;
+            }
+            @include mobileSmall {
+              /*  position: relative;
+            bottom: 3rem; */
+            }
           }
-          @include mobileSmall {
-            position: relative;
-            bottom: 3rem;
-          }
-        }
-        @include mobileMedium {
-          width: 200px;
+          @include mobileMedium {
+            /*   width: 200px;
           height: 40px;
           position: relative;
-          bottom: 4rem;
-        }
-        @include mobile {
-          bottom: 6rem;
+          bottom: 4rem; */
+          }
+          @include mobile {
+            /* bottom: 6rem; */
+          }
         }
       }
       span {
         @include mobileExtraSmall {
-          color: #ca6d62;
-          font-size: 1.4rem;
-          letter-spacing: 1px;
-          user-select: none;
-          /* height: 2rem; */
-          position: relative;
-          /*  top: 0.2rem; */
+          // color: #ca6d62;
+          // font-size: 1.4rem;
+          // letter-spacing: 1px;
+          // user-select: none;
+          // /* height: 2rem; */
+          // position: relative;
+          // /*  top: 0.2rem; */
         }
         @include mobile {
-          height: 30px;
-          overflow: hidden;
-          padding-top: 0;
+          /*  height: 30px;
+        overflow: hidden;
+        padding-top: 0; */
           /* font-size: 1.1rem; */
         }
       }

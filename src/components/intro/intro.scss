@@ -38,12 +38,12 @@
       position: relative;
 
       @include mobileExtraSmall {
-        background-color: green;
+        background-color: $secondaryColor;
         width: 14rem;
         height: 14rem;
       }
       @include mobileSmall {
-        background-color: rgb(213, 223, 72);
+        background-color: $secondaryColor;
         width: 16rem;
         height: 16rem;
       }

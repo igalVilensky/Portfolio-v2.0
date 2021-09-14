@@ -21,12 +21,12 @@ function Contact() {
 
   return (
     <div className="contact" id="contact">
-      <div className="left">
+      {/* <div className="left">
         <img
           src={`${process.env.PUBLIC_URL}/assets/contact.svg`}
           alt="contact"
         />
-      </div>
+      </div> */}
       <div className="right">
         <h2>Contact</h2>
         <form onSubmit={submitHandle}>
@@ -41,18 +41,14 @@ function Contact() {
               value={inputText}
               onChange={changeHandle}
             ></textarea>
+            <button type="submit" onClick={clickHandle}>
+              Send
+            </button>
           </div>
-          <button type="submit" onClick={clickHandle}>
-            Send
-          </button>
-          {msg ? (
-            <span style={{ display: "block" }}>
-              Thanks, I'll reply shortly.
-            </span>
-          ) : (
-            <span style={{ display: "block" }}></span>
-          )}
         </form>
+        <div className="spanMsg">
+          {msg && <span>Thanks, I'll reply shortly.</span>}
+        </div>
       </div>
     </div>
   );
