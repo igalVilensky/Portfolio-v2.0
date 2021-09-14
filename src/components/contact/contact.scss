@@ -37,7 +37,9 @@
     }
     h2 {
       @include mobileExtraSmall {
-        font-size: 2rem;
+        font-size: 3rem;
+        position: relative;
+        top: 1rem;
       }
       @include mobileMedium {
         font-size: 4rem;
