@@ -11,8 +11,8 @@
     /* background-color: green; */
   }
   @include mobile {
-    /* flex-direction: column;
-    align-items: center; */
+    flex-direction: row;
+    align-items: center;
   }
 
   .left {
@@ -24,6 +24,9 @@
     }
     @include mobileSmall {
       @include flexCenter;
+    }
+    @include mobile {
+      flex: 0.6;
     }
     .img__container {
       width: 20rem;
@@ -51,12 +54,11 @@
       @include mobileMedium {
         width: 19rem;
         height: 19rem;
-        background-color: lightblue;
+        /* background-color: lightblue; */
       }
       @include mobile {
-        width: 20rem;
-        height: 20rem;
-        background-color: hotpink;
+        width: 50rem;
+        height: 50rem;
       }
       img {
         @include mobileExtraSmall {
@@ -71,16 +73,19 @@
           width: 100%;
         }
         @include mobile {
-          /* width: 40%;
-          bottom: 600px; */
         }
       }
     }
   }
   .right {
     flex: 0.5;
-
+    /* border: 3px dotted red; */
     position: relative;
+    height: 100%;
+    right: 10rem;
+    @include mobile {
+      flex: 0.4;
+    }
     .wrapper {
       /* border: 3px dotted red; */
       /* width: calc(100% - 6px); */
@@ -126,9 +131,9 @@
         @include mobileMedium {
           font-size: 2.5rem;
         }
-        /* @include mobile {
+        @include mobile {
           font-size: 6em;
-        } */
+        }
       }
       h2 {
         letter-spacing: 2px;
@@ -145,9 +150,9 @@
         }
         @include mobileMedium {
         }
-        /* @include mobile {
-          font-size: 4em;
-        } */
+        @include mobile {
+          font-size: 2rem;
+        }
       }
       h3 {
         width: 90%;
@@ -204,8 +209,17 @@
         img {
           filter: invert(42%) sepia(93%) saturate(892%) hue-rotate(330deg)
             brightness(88%) contrast(103%);
-          width: 55px;
+          width: 4rem;
           animation: blink 2s infinite;
+          @include mobileExtraSmall {
+            width: 2rem;
+          }
+          @include mobileSmall {
+            width: 3rem;
+          }
+          @include mobileMedium {
+            width: 3.5rem;
+          }
         }
       }
 
