@@ -80,11 +80,13 @@
   .right {
     flex: 0.5;
     /* border: 3px dotted red; */
-    position: relative;
+
     height: 100%;
-    right: 10rem;
+
     @include mobile {
+      position: relative;
       flex: 0.4;
+      right: 10rem;
     }
     .wrapper {
       /* border: 3px dotted red; */
