@@ -6,7 +6,7 @@ function Contact() {
   const [inputText, setInputText] = useState("");
 
   const submitHandle = (e) => {
-    e.preventDefault();
+    /*  e.preventDefault(); */
     setMsg(true);
   };
 
@@ -29,13 +29,17 @@ function Contact() {
       </div> */}
       <div className="right">
         <h2>Contact</h2>
-        <form onSubmit={submitHandle}>
+        <form
+          action="https://formsubmit.co/vilenskyigal@gmail.com"
+          method="POST"
+          onSubmit={submitHandle}
+        >
           <div className="input_textArea_wrap">
-            <input type="text" placeholder="eMail" />
+            <input type="text" placeholder="eMail" required name="email" />
             <textarea
               placeholder="Message"
-              name=""
-              id=""
+              name="name"
+              id="msg"
               cols="30"
               rows="10"
               value={inputText}
