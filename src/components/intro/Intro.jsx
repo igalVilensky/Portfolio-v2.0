@@ -18,7 +18,7 @@ function Intro() {
       <div className="left">
         <div className="img__container">
           <img
-            src={`${process.env.PUBLIC_URL}/assets/me.png`}
+            src={`${process.env.PUBLIC_URL}/assets/profileMe.png`}
             alt="Igal Vilensky"
           />
         </div>

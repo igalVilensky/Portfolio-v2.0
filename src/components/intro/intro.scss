@@ -11,6 +11,8 @@
     /* background-color: green; */
   }
   @include mobile {
+  }
+  @include desktopSmall {
     flex-direction: row;
     align-items: center;
   }
@@ -37,7 +39,7 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      float: right;
+      /* float: right; */
       position: relative;
 
       @include mobileExtraSmall {
@@ -57,22 +59,34 @@
         /* background-color: lightblue; */
       }
       @include mobile {
+        width: 40rem;
+        height: 40rem;
+        /*  background-color: blue; */
+      }
+      @include desktopSmall {
         width: 50rem;
         height: 50rem;
       }
       img {
+        min-width: 185%;
+        height: 185%;
+        position: relative;
+        top: 12rem;
         @include mobileExtraSmall {
-          width: 100%;
+          top: 11rem;
+          left: 1rem;
         }
         @include mobileSmall {
-          width: 100%;
-          position: initial;
+          top: 13rem;
         }
         @include mobileMedium {
-          position: initial;
-          width: 100%;
+          top: 15rem;
         }
         @include mobile {
+          top: 30rem;
+        }
+        @include desktopSmall {
+          top: 40rem;
         }
       }
     }
@@ -84,6 +98,8 @@
     height: 100%;
 
     @include mobile {
+    }
+    @include desktopSmall {
       position: relative;
       flex: 0.4;
       right: 10rem;
