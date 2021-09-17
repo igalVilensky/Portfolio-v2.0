@@ -35,7 +35,8 @@ function Contact() {
           onSubmit={submitHandle}
         >
           <div className="input_textArea_wrap">
-            <input type="text" placeholder="eMail" required name="email" />
+            <input type="text" placeholder="Email" required name="email" />
+            <input type="text" placeholder="Name" required name="name" />
             <textarea
               placeholder="Message"
               name="name"

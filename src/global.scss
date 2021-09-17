@@ -52,5 +52,6 @@ $width1850: 1850px;
 // 1850px
 @mixin wBig {
   @media (min-width: #{$width1850}) {
+    @content;
   }
 }

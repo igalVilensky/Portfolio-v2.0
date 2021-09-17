@@ -57,10 +57,11 @@ function Portfolio() {
       </ul>
       <div className="container">
         {data.map((d) => (
-          <div className="item">
-            <img src={d.img} alt={d.title}></img>
-            <h3>{d.title}</h3>
-          </div>
+          <a className="link" href={d.path} target="_blank">
+            <div className="item">
+              <img src={d.img} alt={d.title}></img> <h3>{d.title}</h3>
+            </div>
+          </a>
         ))}
       </div>
     </div>
